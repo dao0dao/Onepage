@@ -1,0 +1,70 @@
+#aboutHeroImg .aboutText {
+  padding: 100px 0;
+}
+
+#team .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#team .card {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 1400px) {
+  .hero-img {
+    background-image: url("img/heroImageBig.jpg");
+  }
+  #aboutHeroImg {
+    background-image: url("img/aboutHeroImgBig.jpg");
+  }
+  #team .jubotron {
+    background-image: url("img/teamBackgroundBig.jpg");
+  }
+  #contact .jumbotron {
+    background-image: url("img/contactHeroimageSmall.jpg");
+  }
+}
+
+@media (min-width: 1750px) {
+  .carousel-control-prev {
+    left: calc(45% - 640px) !important;
+  }
+  .carousel-control-next {
+    right: calc(45% - 640px) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  #team .card-text {
+    height: 120px;
+  }
+}
+
+@media (min-width: 1276px) {
+  #team .card-text {
+    height: 97px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #team .card-text {
+    height: 121px;
+  }
+}
+
+@media (min-width: 1595px) {
+  #team .card-text {
+    height: 98px;
+  }
+}
+
+@media (min-width: 1995px) {
+  #team .card-text {
+    height: 72px;
+  }
+}
+/*# sourceMappingURL=large.css.map */

@@ -1,0 +1,324 @@
+$colorBlue: #5982ff
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    position: relative
+    font-family: 'Inconsolata', monospace
+    background-color: rgb(82,82,82)
+#prvBottomParent
+    display: none!important
+    visibility: hidden!important
+html
+    scroll-behavior: smooth
+// Navigation
+nav
+    text-transform: uppercase
+    transition: background-color 1s ease-in
+    a
+        color: #fff
+    a:hover
+        color: $colorBlue
+    a:hover i
+        color: $colorBlue
+    .fas
+        padding: 10px 0 10px 20px
+        color: #fff
+    .active
+        color: $colorBlue
+
+.navShadow
+    background-color: rgba(0,0,0, 0.9)
+
+// End of navigatione
+h3
+    text-transform: uppercase
+    text-align: center
+
+.blueText
+    color: $colorBlue
+
+.upperText
+    text-transform: uppercase
+
+.scrollfix::before
+    display: block
+    content: ''
+    height: 66px
+    margin-top: -66px
+
+.wrapper
+    width: 80%
+    margin: 0 auto
+
+.visibility
+    visibility: hidden
+
+.abouts
+    transition: .3s
+.achievmentTransition
+    transition: .3s
+
+// Header
+header
+    color: #fff
+
+.hero-img
+    position: relative
+    width: 100%
+    height: 100vh
+    background-image: url('../img/heroImageSmall.jpg')
+    background-size: cover
+    background-position: center
+    background-attachment: fixed
+
+.hero-shadow
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, .8)
+
+.hero-text
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+    h1
+        text-transform: uppercase
+        padding: 0 20px
+    h1, p
+        text-align: center
+        padding: 0 20px
+    p
+        font-size: 1.25rem
+    a
+        letter-spacing: 2px
+@media screen and (min-width: 570px)
+    .hero-text p
+        font-size: 1.5rem
+
+@keyframes appear
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.arrowDown
+    position: absolute
+    bottom: 5px
+    left: 50%
+    transform: translatex(-50%)
+    color: #fff
+    font-size: 3rem
+    opacity: 0
+    transform: translate3d(0,0,0)
+    animation: appear 2s 2.5s forwards, bounce 2s 3s infinite
+
+.arrowDown:hover
+    color: $colorBlue
+
+///     M A I N       ///
+// About us
+.jumbotron
+    margin-bottom: 0 !important
+#about
+
+    h4
+        color: rgb(100,100,100)
+
+    i
+        font-size: 30px
+        margin-top: 25px
+
+    .abouts:hover
+        color: $colorBlue
+        cursor: default
+    .abouts:hover > h4
+        color: $colorBlue !important
+        cursor: default
+
+.underline
+    height: 4px
+    width: 60px
+    margin: 0 auto 20px
+    background-color: $colorBlue
+
+#aboutHeroImg
+    position: relative
+    background-image: url('../img/aboutHeroImgSmall.jpg')
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    width: 100%
+    height: auto
+    z-index: -2
+
+    .aboutShadow
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.6)
+        z-index: -1
+
+    .aboutText
+        padding: 30px 0
+        color: #fff
+
+    h4
+        padding-top: 25px
+
+    i
+        font-size: 40px
+        color: rgb(200,200,200)
+
+// PORTFOLIO
+
+#portfolio
+    .jumbotron
+        padding: 2rem 2rem 0.5rem
+    .card
+        left: 50%
+        transform: translatex(-50%)
+        margin-bottom: 30px
+    .carousel-item
+        position: relative
+        width: 100%
+        height: 500px
+    .carousel
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+    .carousel-caption
+        position: relative
+        top: 370px
+        left: 50%
+        transform: translateX(-50%)
+        max-width: 1280px
+        right: 0
+        background-color: rgba(0,0,0,.8)
+    .carousel-indicators
+        padding-bottom: 10px
+// PRICE
+#price
+    .jumbotron
+        background-color: #fff
+    .boxPrice
+        margin: 30px 20px
+        border-radius: 3px
+        box-shadow: 2px 2px 2px 3px black
+        z-index: 1
+        transition: 0.3s transform
+        i
+            color: #999
+            font-weight: bold
+    .boxPrice:hover
+        transform: scale(1.1)
+    span
+        padding: 0 5px
+    h3
+        color: $colorBlue
+    i
+        font-size: 35px
+        padding: 0 3px
+    .col
+        position: relative
+        height: 100%
+        padding-bottom: 50px
+    .btn
+        position: absolute
+        bottom: 10px
+        left: 50%
+        transform: translatex(-50%)
+// T E A M //
+#team
+    .jubotron
+        background-image: url('../img/teamBackgroundSmall.jpg')
+        background-position: center
+        background-attachment: fixed
+        background-size: cover
+    .teamHeroShadow
+        padding: 60px 0
+        background-color: #41414199
+    h3
+        color: white
+    .card
+        img
+            height: 250px
+            object-fit: cover
+    .card-text
+        display: inline-block
+        height: 97px
+        text-align: justify
+@media (min-width: 450px)
+    #team
+        .card-text
+            height: 73px
+// Achievments
+#achievments
+    .jumbotron
+        padding-bottom: 0!important
+    .row
+        padding: 60px 0
+    .achievmentsItems
+        margin-bottom: 15px
+        padding: 5px 5px
+        text-align: center
+        text-transform: uppercase
+        i
+            font-size: 35px
+            color: #ffffff
+            text-shadow: 0px 0px 4px black
+            padding: 10px 0
+        .achievments-number
+            font-size: 1.3em
+        .achievments-text
+            font-size: 0.95em
+// Contact
+#contact
+    .jumbotron
+        padding: 0
+        background-image: url('../img/contactHeroimageSmall.jpg')
+        background-position: bottom
+        background-attachment: fixed
+        background-size: cover
+    .contactShadow
+        width: 100%
+        height: 100%
+        padding: 60px 0
+        background-color: rgba(23, 25, 47, 0.69)
+    .row
+        align-items: center
+    h3
+        text-transform: uppercase
+        color: #fff!important
+    .underline
+        background-color: #ddd
+    .contactItem
+        margin: 20px 0
+        color: #fff
+        text-align: center
+        h3
+            letter-spacing: 5px
+    a
+        color: #fff
+    a:hover
+        color: #bbb
+    i
+        padding: 0 10px
+        font-size: 25px
+// Footer
+footer
+    background-color: #ddd
+    p
+        margin-bottom: 0!important
+        padding: 20px
+        text-align: center
