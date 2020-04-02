@@ -2,6 +2,9 @@
 
 Szablon fikcyjnej firmy
 
-Użyte frameworki: Boostrap
+Użyte rozwiązania:
+1. Bootsrap
+2. Waypoints
+3. Animacje - https://github.com/daneden/animate.css
 
-Link to live page: https://dao0dao.github.io/Onepage/
+Live page: https://dao0dao.github.io/Onepage/
